@@ -1,0 +1,416 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    }
+    .header {
+      background-color: black;
+      box-shadow: 1px 1px 4px 0 rgba(0,0,0,.1);
+      position: fixed;
+      width: 100%;
+      z-index: 3;
+    }
+    
+    .header ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      overflow: hidden;
+      background-color:black;
+    }
+    
+    .header li a {
+    
+      padding: 20px 20px;
+      text-decoration: none;
+    }
+    
+    .header li a:hover,
+    .header .menu-btn:hover {
+      background-color: black;
+    }
+    
+    .header .logo {
+      display: block;
+     
+      font-size: 2em;
+      padding: 10px 20px;
+      text-decoration: none;
+      margin-left: 100px;
+    }
+    
+    /* menu */
+    
+    .header .menu {
+      clear: both;
+      max-height: 0;
+      transition: max-height .2s ease-out;
+    }
+    
+    /* menu icon */
+    
+    .header .menu-icon {
+      cursor: pointer;
+      display: inline-block;
+      float: right;
+      padding: 28px 20px;
+      position: relative;
+      user-select: none;
+    }
+    
+    .header .menu-icon .navicon {
+      background:white;
+      display: block;
+      height: 2px;
+      position: relative;
+      transition: background .2s ease-out;
+      width: 18px;
+    }
+    
+    .header .menu-icon .navicon:before,
+    .header .menu-icon .navicon:after {
+      background: white;
+      content: '';
+      display: block;
+      height: 100%;
+      position: absolute;
+      transition: all .2s ease-out;
+      width: 100%;
+    }
+    
+    .header .menu-icon .navicon:before {
+      top: 5px;
+    }
+    
+    .header .menu-icon .navicon:after {
+      top: -5px;
+    }
+    
+    /* menu btn */
+    
+    .header .menu-btn {
+      display: none;
+    }
+    
+    .header .menu-btn:checked ~ .menu {
+      max-height: 240px;
+    }
+    
+    .header .menu-btn:checked ~ .menu-icon .navicon {
+      background: transparent;
+    }
+    
+    .header .menu-btn:checked ~ .menu-icon .navicon:before {
+      transform: rotate(-45deg);
+    }
+    
+    .header .menu-btn:checked ~ .menu-icon .navicon:after {
+      transform: rotate(45deg);
+    }
+    
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+    .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+      top: 0;
+    }
+    
+    /* 48em = 768px */
+    
+    @media (min-width: 48em) {
+      .header li {
+        float: left;
+      }
+      .header li a {
+        padding: 20px 30px;
+      }
+      .header .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+      }
+      .header .menu-icon {
+        display: none;
+      }
+    }
+    
+              
+    nav ul 
+     {  
+        width: 100%;
+        position: fixed;
+        list-style: none;
+        display:flex;
+        background-color: black;
+        color: white;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        background-image: url(images/back.jpg);
+        z-index:1;
+     }
+    
+     li
+      {
+         padding-left: 50px;
+         padding-top:16PX;
+         margin-top: 12px;
+      }
+      li a
+      {
+        color: white;
+        text-decoration: none;
+      }
+     .Back
+       { 
+            position: absolute; 
+            width:100%; 
+            height: 65%;
+            background-size: cover;
+            background-image: url(images/back.jpg);
+        }
+    
+       .logo{
+          padding: 0px;
+          padding-left:50px;
+          margin-top: 0;
+    
+          }
+        .button1
+          { 
+             background:#038DFE;
+             border: #038DFE;
+             border-radius: 30px;
+             padding: 10px 40px 10px 40px;
+            top: 40%;
+            color: white;
+          }
+          @media screen and (max-width:767px)
+          {
+               nav ul{  
+                 display: block;
+                 margin: 0;
+                 padding: 0;
+                 text-align: center;
+                 font-size:14px ;
+                 position: static;
+              }
+              nav ul li{ margin-right:80px;
+                
+             }
+              .button1{
+                 padding:20px ;
+                 margin: 0%;
+                 font-size:12px ;
+                 padding-top:10px ;
+                 padding-bottom:10px ;
+                 text-align: center;
+            
+              }
+              .logo
+              {text-align: center;
+                margin-right:70px;
+          
+              }
+              nav ul li a
+              {
+                 width: 100%;
+                 text-align: center;
+              }
+          }
+/* µµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµµ */
+
+
+
+
+ .table
+ {
+   border-style:solid ;
+   width: 1000px;
+   height: 400px;
+   margin-left: 100px;
+   margin-top:10px; 
+   border-collapse: collapse;
+ }
+ h1
+   {
+      margin-top: 50PX;
+      text-align: center;
+   }
+th
+   {
+      border: 1px solid black;
+   }
+
+ .Staff img
+   {
+      position: relative;
+      left: 340px;
+      top: -50px;
+   }
+
+ td img{
+    width: 60px;
+    margin-left:20px;
+    text-align: center;
+   
+ }
+ td{
+    text-align: center;
+    border: 1px solid black;
+ }
+
+ tr:hover{
+
+   background-color: #8DB2F4;
+ }
+ @media(max-width:767px){
+   .table
+   {
+      width: 25px;
+      height: 169px;
+      margin-left: 0%;
+      margin-top: -7px;
+      text-align: center;
+   }
+   
+h1
+ {
+   margin-top: -54PX;
+   font-size: 12px;
+   margin-left: -212Px;
+ }
+th{
+   
+  font-size: 9px;
+}
+
+
+ td img{
+    width: 40px;
+    margin-left:10px;
+ }
+ td{
+    font-size: 11px;
+ }
+ }
+
+footer{
+   height: 100px;
+   background-color: black;
+   margin-top: 100px;
+ }
+ .RS
+ {
+    text-align: right;
+    color: gray;
+    position:relative;
+    top: -85px;
+    right: 30px;
+    margin-top:50px;
+ }
+ 
+ .RS img
+ {
+   position:relative;
+    top: -15px;
+    right: 30px;
+    height: 20px;
+    width: 15px;
+    margin: px;
+ }
+ .RSp
+ {
+    margin: 20px 0px 20px;
+ }
+ .center
+ {
+       color: gray;
+       text-align: center;
+       position:relative;
+       top: 20px;
+ }
+ .contacter p
+ {
+    position: relative;
+    top: 10px;
+    margin-left: 20px;
+    color: dimgrey;
+    font-size: 15px;
+ }
+ .contacter p{
+    position: relative;
+    top: 15px;
+    margin-left: 20px;
+    color: dimgrey;
+    font-size: 15px;
+ }
+ 
+ .contacter img{
+    height: 10px;
+    width: 10px;
+    position: relative;
+    top: 20px;
+    left: 20px;
+ } 
+ 
+ .contacter a{
+    margin-left: 25px;
+    position: relative;
+    top: 20px;
+    color: #347AB1;
+ }
+
+ @media(max-width:767px){
+   footer
+      {
+         height: 149px;
+         width: 100%;
+         text-align: center; 
+      }
+   .RS
+      {
+         text-align: center;
+         top: 4px;
+         right: 4px;
+         margin-top:53px;
+      }
+   
+   .RS img
+      {
+         top: 62px;
+         right: -1px;
+         margin-top: 56px;
+      }
+   .RSp
+      {
+         margin: -4px 82px -115px;
+      }
+   .center
+      {
+            text-align: center;
+            top: 36px;
+      }
+   .contacter p
+      { 
+         text-align: center;
+         
+      }
+   .contacter p{
+      
+      top: 15px;
+      margin-left: 20px;
+      color: dimgrey;
+      font-size: 15px;
+   }
+   
+   .contacter img{
+   
+      top:16px;
+      left:2px;
+   } 
+   
+   .contacter a{
+      margin-left: 2px;
+      top: 14px;
+    text-align: center;
+   }
+
+   }
+ 
